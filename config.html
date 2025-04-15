@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Configurações - Rede Social</title>
+    <link rel="stylesheet" href="config.css" />
+</head>
+<body>
+    <div class="config-wrapper">
+        <header>
+            <h1>Configurações da Rede Social</h1>
+        </header>
+
+        <main>
+            <!-- Configurações do Usuário -->
+            <section class="config-section">
+                <h2>Configurações do Usuário</h2>
+                <div class="input-group">
+                    <label for="nome-usuario">Nome de Exibição</label>
+                    <input type="text" id="nome-usuario" placeholder="Nome de Exibição" />
+                </div>
+                <div class="input-group">
+                    <label for="email-usuario">Email</label>
+                    <input type="email" id="email-usuario" placeholder="Email" />
+                </div>
+                <button class="save-btn" id="salvar-usuario">Salvar Usuário</button>
+            </section>
+
+            <!-- Configurações da Rede Social -->
+            <section class="config-section">
+                <h2>Configurações da Rede Social</h2>
+                <div class="input-group">
+                    <label for="tema">Tema</label>
+                    <select id="tema">
+                        <option value="claro">Claro</option>
+                        <option value="escuro">Escuro</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="notificacoes">Notificações</label>
+                    <select id="notificacoes">
+                        <option value="ativado">Ativado</option>
+                        <option value="desativado">Desativado</option>
+                    </select>
+                </div>
+                <button class="save-btn" id="salvar-configuracoes">Salvar Configurações</button>
+            </section>
+
+            <!-- Configurações Gerais -->
+            <section class="config-section">
+                <h2>Configurações Gerais</h2>
+                <div class="input-group">
+                    <label for="privacidade">Privacidade</label>
+                    <select id="privacidade">
+                        <option value="publico">Público</option>
+                        <option value="privado">Privado</option>
+                    </select>
+                </div>
+                <button class="save-btn" id="salvar-geral">Salvar Configurações Gerais</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="localStorage.js"></script>
+    <script src="theme.js"></script>
+    <script src="config.js"></script>
+</body>
+</html>

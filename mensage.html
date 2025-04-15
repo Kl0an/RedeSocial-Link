@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aba de Conversas</title>
+    <link rel="stylesheet" href="conversas.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Contatos</h3>
+            <ul id="contatos-lista">
+                <li data-contato="João">João</li>
+                <li data-contato="Maria">Maria</li>
+                <li data-contato="Carlos">Carlos</li>
+            </ul>
+        </div>
+
+        <div class="chat">
+            <div id="chat-header">
+                <h3 id="nome-contato">Selecione um contato</h3>
+            </div>
+            <div id="chat-mensagens"></div>
+
+            <div id="chat-input">
+                <input type="text" id="mensagem" placeholder="Escreva sua mensagem" />
+                <button id="enviar-mensagem">Enviar</button>
+                <button id="gravar-audio">Gravar Áudio</button>
+                <input type="file" id="enviar-foto" accept="image/*" style="display:none" />
+                <button id="botao-foto">Enviar Foto</button>
+                <input type="file" id="enviar-video" accept="video/*" style="display:none" />
+                <button id="botao-video">Enviar Vídeo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="conversas.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inovadora Rede Social</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Inovadora Rede Social</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="tab-link" data-tab="inicio">Início</a></li>
+                <li><a href="#" class="tab-link" data-tab="mensagens">Mensagens</a></li>
+                <li><a href="#" class="tab-link" data-tab="notificacoes">Notificações</a></li>
+                <li><a href="#" class="tab-link" data-tab="videos">Vídeos</a></li>
+                <li><a href="#" class="tab-link" data-tab="mural">Mural</a></li>
+                <li><a href="#" class="tab-link" data-tab="usuario">Usuário</a></li>
+                <li><a href="#" class="tab-link" data-tab="configuracoes">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="inicio" class="tab-content active">
+            <h2>Início</h2>
+            <div class="postagem">
+                <p><strong>@usuario1:</strong> Esta é uma postagem de exemplo no feed de notícias.</p>
+                <p><strong>@usuario2:</strong> Veja como o conteúdo é dinâmico e exibido aqui!</p>
+            </div>
+        </section>
+
+        <section id="mensagens" class="tab-content hidden">
+            <h2>Mensagens</h2>
+            <div id="mensagem-container"></div>
+            <input type="text" id="mensagem" placeholder="Escreva sua mensagem" />
+            <button id="enviar-mensagem">Enviar</button>
+        </section>
+
+        <section id="notificacoes" class="tab-content hidden">
+            <h2>Notificações</h2>
+            <ul>
+                <li>@usuario1 curtiu sua postagem</li>
+                <li>@usuario2 comentou em seu vídeo</li>
+            </ul>
+        </section>
+
+        <section id="videos" class="tab-content hidden">
+            <h2>Vídeos</h2>
+            <div class="video-feed">
+                <video src="video.mp4" controls></video>
+                <video src="video2.mp4" controls></video>
+            </div>
+        </section>
+
+        <section id="mural" class="tab-content hidden">
+            <h2>Mural de Notícias</h2>
+            <div class="noticia">
+                <h3>Notícia 1</h3>
+                <p>Esta é a primeira notícia no mural.</p>
+            </div>
+            <div class="noticia">
+                <h3>Notícia 2</h3>
+                <p>Outra notícia interessante para os usuários.</p>
+            </div>
+        </section>
+
+        <section id="usuario" class="tab-content hidden">
+            <h2>Perfil do Usuário</h2>
+            <p>Nome de usuário: @meu_usuario</p>
+            <p>Postagens: 20</p>
+        </section>
+
+        <section id="configuracoes" class="tab-content hidden">
+            <h2>Configurações</h2>
+            <div>
+                <label for="tema">Tema:</label>
+                <button id="alternar-tema">Alternar Claro/Escuro</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
